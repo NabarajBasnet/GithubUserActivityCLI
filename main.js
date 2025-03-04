@@ -33,6 +33,6 @@ const renderActivities = (events) => {
     });
 }
 
-fetchActivities(usename)
+fetchActivities(username)
     .then((events) => renderActivities(events))
     .catch(err => console.log(err))
