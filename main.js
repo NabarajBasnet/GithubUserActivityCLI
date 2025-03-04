@@ -18,8 +18,8 @@ const renderActivities = (events) => {
                 activity = `Pushed ${commitLength} commits to ${event.repo.name}`;
                 break;
 
-            case 'IssuesEvent':
-                activity = `Opened a new issue in ${event.repo.name}`;
+            case 'CreateEvent':
+                activity = `New repo created ${event.repo.name} in branch ${event.payload.master_branch}`;
                 break;
 
             case 'WatchEvent':
