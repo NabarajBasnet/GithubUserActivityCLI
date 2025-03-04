@@ -33,6 +33,6 @@ const renderActivities = (events) => {
     });
 }
 
-fetchActivities('kamranahmedse')
+fetchActivities(usename)
     .then((events) => renderActivities(events))
     .catch(err => console.log(err))
